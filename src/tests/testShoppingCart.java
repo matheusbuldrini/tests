@@ -6,12 +6,7 @@ import static org.junit.Assert.assertEquals;
 /*Implemente métodos de teste para a classe ShoppingCart.*/
 
 public class testShoppingCart {
-   @Test
-   public void testSetup() {
-      String str= "I am done with Junit setup";
-      assertEquals("I am done with Junit setup",str);
-   }
-   
+  
    @Test
    public void test_add_count_totalPrice() {
 	ShoppingCart cart = new ShoppingCart();

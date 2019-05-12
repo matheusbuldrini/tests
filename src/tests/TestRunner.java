@@ -10,6 +10,12 @@ public class TestRunner {
 	      for (Failure failure : result.getFailures()) {
 	         System.out.println(failure.toString());
 	      }
-	      System.out.println("Test Result: "+result.wasSuccessful());
+	      System.out.println("Test ShoppingCart Result: "+result.wasSuccessful());
+	      
+	      result = JUnitCore.runClasses(testFibonacci.class);
+	      for (Failure failure : result.getFailures()) {
+	         System.out.println(failure.toString());
+	      }
+	      System.out.println("Test Fibonacci Result: "+result.wasSuccessful());
 	   }
 }
